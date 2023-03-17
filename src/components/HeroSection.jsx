@@ -39,7 +39,7 @@ export default function HeroSection() {
                   </div>
                   <div className="relative px-4 py-16 text-center sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                     <Typography variant="h1" color="white">
-                      À Partire de 195 Dhs / jour !
+                      À Partir de 195 Dhs / jour !
                     </Typography>
                     
 

@@ -14,7 +14,7 @@ import {
 } from "../../config/creatorActions";
 import { Button } from "@material-tailwind/react";
 
-const FormHeroFirst = () => {
+const FormHeroFirst = ({children, setReservation}) => {
   const dispatch = useDispatch();
   const [days, setDays] = useState("");
   const [startDate, setStartDate] = useState("");
@@ -67,6 +67,7 @@ const FormHeroFirst = () => {
     // Add your code to handle the close action
     dispatch(openHeaderForm(false));
     dispatch(resetData())
+    setReservation(false)
   };
 
   const handelClick = () => {
@@ -90,7 +91,7 @@ const FormHeroFirst = () => {
     <div className="card  flex-shrink-0 relative w-full h-full">
       <div className="card-body justify-center">
         {/* Select the car */}
-        <SelectCars />
+        {children}
 
         {/* Input fields for start and end dates */}
         <label

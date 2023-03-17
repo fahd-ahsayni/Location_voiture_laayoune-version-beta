@@ -9,9 +9,10 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function SelectCars() {
+export default function SelectCars({id}) {
   const dispatch = useDispatch();
-  const [selected, setSelected] = useState(categoriesData[3]);
+  const selectedVoiture = id ? categoriesData.find(item => item.id === id) : categoriesData[3]
+  const [selected, setSelected] = useState(selectedVoiture);
 
   useEffect(() => {
     dispatch(priceCarUpdate(selected.price));

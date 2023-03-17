@@ -16,7 +16,7 @@ import {
 import emailjs from "emailjs-com";
 import { Button } from "@material-tailwind/react";
 
-const FormHeroSeconde = ({children}) => {
+const FormHeroSeconde = ({children, setReservation}) => {
   const dispatch = useDispatch();
   const priceTotal = useSelector((state) => state.price.priceTotal);
   const factorInfo = useSelector((state) => state);
@@ -71,7 +71,7 @@ const FormHeroSeconde = ({children}) => {
     dispatch(openHeaderForm(false));
     dispatch(openModalConfermation(true));
     dispatch(formActive(1))
-    dispatch(cardReservartion(1))
+    setReservation && setReservation(false)
     dispatch(resetData());
   };
 

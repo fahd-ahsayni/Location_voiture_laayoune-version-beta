@@ -122,14 +122,11 @@ export default (state = initialState, action) => {
 
     case RESET:
       return {
+        ...state,
         headerForm: {
           isOpen: false,
         },
-        modalConfermation: {
-          isOpen: false,
-        },
         cardReservationActive: 1,
-        confirmation: false,
         formActive: 1,
         isSeatBaby: false,
         isGps: false,

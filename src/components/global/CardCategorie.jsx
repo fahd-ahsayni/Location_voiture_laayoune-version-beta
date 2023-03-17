@@ -12,6 +12,10 @@ import { Button } from "@material-tailwind/react";
 const builder = ImageUrlBuilder(sanityClient);
 const urlFor = (source) => builder.image(source)
 
+const handleModalOpen = () => {
+  dispatch(openHeaderForm(true));
+};
+
 const CardCategorie = ({id, image, title, price, seats, doors, bags, fetchData, alt}) => {
   const [reservation, setReservation] = useState();
   return (
@@ -59,7 +63,7 @@ const CardCategorie = ({id, image, title, price, seats, doors, bags, fetchData, 
             ))}
           </dd>
           <dd className="text-gray-500 dark:text-gray-50 uppercase">
-            de <span className="font-medium">Dhs TTC {price}</span> / JOURE
+            de <span className="font-medium">Dhs TTC {price}</span> / JOUR
           </dd>
           <dd className="mt-3 flex justify-center space-x-2.5">
             <span className="rounded-full flex justify-center items-center bg-blue-100 px-2 py-1 text-xs font-medium text-blue-800">

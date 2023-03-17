@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import FormHeroSeconde from "../global/FormHeroSeconde";
 import { openHeaderForm } from "../../config/creatorActions";
 import SelectAgence from "./SelectAgence";
+import SelectCars from "./SelectCars";
 
 export default function Modal() {
   const dispatch = useDispatch()
@@ -40,7 +41,9 @@ export default function Modal() {
               >
                 <Dialog.Panel className="relative transform overflow-hidden md:rounded-lg bg-gray-50 backdrop-blur md:px-4 px-2 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:p-2 dark:bg-primary-dark/50 w-screen md:h-full h-screen md:w-[500px]">
                   {formActive === 1 ? (
-                    <FormHeroFirst />
+                    <FormHeroFirst >
+                      <SelectCars />
+                    </FormHeroFirst>
                   ) : (
                     <FormHeroSeconde >
                       <SelectAgence />
