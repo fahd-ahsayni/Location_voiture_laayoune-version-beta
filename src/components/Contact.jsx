@@ -13,9 +13,10 @@ export default function Contact() {
             location de voiture laayoune Contact
           </p>
           <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500 dark:text-gray-300 text-center">
-            Phasellus lorem quam molestie id quisque diam aenean nulla in.
-            Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend
-            condimentum id viverra nulla.
+            N'hésitez pas à nous contacter pour obtenir plus d'informations sur
+            nos tarifs et nos offres de location. Nous sommes impatients de vous
+            aider à trouver la voiture parfaite pour votre prochaine aventure
+            sur la route.
           </p>
         </div>
         <div className="relative bg-white dark:bg-second-dark shadow-xl dark:shadow-[#0a0c0f] rounded-2xl overflow-hidden">
@@ -122,11 +123,11 @@ export default function Contact() {
                 </svg>
               </div>
               <h3 className="text-lg font-medium text-gray-50">
-                Contact information
+                Contact Information
               </h3>
               <p className="mt-6 max-w-3xl text-base text-gray-50">
-                Nullam risus blandit ac aliquam justo ipsum. Quam mauris
-                volutpat massa dictumst amet. Sapien tortor lacus arcu.
+                Vous pouvez nos contacter via Télephone, Email ou bien notre
+                site web.Vous êtes les bienvenus
               </p>
               <dl className="mt-8 space-y-6">
                 <dt>
@@ -134,14 +135,14 @@ export default function Contact() {
                 </dt>
                 <dd className="flex items-center text-base text-gray-50">
                   <FiMail className="h-6 w-6 flex-shrink-0 text-gray-50" />
-                  <span className="ml-3">+216 666-000000</span>
+                  <span className="ml-3">support@workcation.com</span>
                 </dd>
                 <dt>
                   <span className="sr-only">Email</span>
                 </dt>
                 <dd className="flex items-center text-base text-gray-50">
                   <FaPhoneAlt className="w-5 h-5 flex-shrink-0 text-gray-50" />
-                  <span className="ml-3">support@workcation.com</span>
+                  <span className="ml-3">+216 649-000000</span>
                 </dd>
               </dl>
               <ul role="list" className="mt-8 flex space-x-12">
@@ -169,7 +170,7 @@ export default function Contact() {
             {/* Contact form */}
             <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-200">
-                Send us a message
+                Envoyez-nous un message
               </h3>
               <form
                 action="#"
@@ -181,7 +182,7 @@ export default function Contact() {
                     htmlFor="first-name"
                     className="block text-sm font-medium text-gray-900 dark:text-gray-200"
                   >
-                    First name
+                    Prénom
                   </label>
                   <div className="mt-1">
                     <input
@@ -198,7 +199,7 @@ export default function Contact() {
                     htmlFor="last-name"
                     className="block text-sm font-medium text-gray-900 dark:text-gray-200"
                   >
-                    Last name
+                    Nom
                   </label>
                   <div className="mt-1">
                     <input
@@ -233,14 +234,8 @@ export default function Contact() {
                       htmlFor="phone"
                       className="block text-sm font-medium text-gray-900 dark:text-gray-200"
                     >
-                      Phone
+                      Téléphone
                     </label>
-                    <span
-                      id="phone-optional"
-                      className="text-sm text-gray-500 dark:text-gray-400"
-                    >
-                      Optional
-                    </span>
                   </div>
                   <div className="mt-1">
                     <input
@@ -258,7 +253,7 @@ export default function Contact() {
                     htmlFor="subject"
                     className="block text-sm font-medium text-gray-900 dark:text-gray-200"
                   >
-                    Subject
+                    Sujet
                   </label>
                   <div className="mt-1">
                     <input
@@ -290,7 +285,9 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="sm:col-span-2 sm:flex sm:justify-end">
-                  <Button color="blue" className="px-8 py-4">Envoyer Message</Button>
+                  <Button color="blue" className="px-8 py-4">
+                    Envoyer Message
+                  </Button>
                 </div>
               </form>
             </div>

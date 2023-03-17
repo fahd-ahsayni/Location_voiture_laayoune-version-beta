@@ -1,18 +1,17 @@
-import { Fragment, useState } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
-import { CheckIcon } from '@heroicons/react/24/outline'
-import { useDispatch, useSelector } from 'react-redux'
-import { openModalConfermation, resetData } from '../../config/creatorActions'
+import { Fragment, useState } from "react";
+import { Dialog, Transition } from "@headlessui/react";
+import { CheckIcon } from "@heroicons/react/24/outline";
+import { useDispatch, useSelector } from "react-redux";
+import { openModalConfermation, resetData } from "../../config/creatorActions";
 
 export default function ModelConfirmation() {
-  const dispatch = useDispatch()
-  const isOpen = useSelector(state => state.modalConfermation.isOpen)
+  const dispatch = useDispatch();
+  const isOpen = useSelector((state) => state.modalConfermation.isOpen);
 
   const handelClick = () => {
-    dispatch(openModalConfermation(false))
-    dispatch(resetData())
-  }
-
+    dispatch(openModalConfermation(false));
+    dispatch(resetData());
+  };
 
   return (
     <Transition.Root show={isOpen} as={Fragment}>
@@ -43,15 +42,22 @@ export default function ModelConfirmation() {
               <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
                 <div>
                   <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
-                    <CheckIcon className="h-6 w-6 text-green-600" aria-hidden="true" />
+                    <CheckIcon
+                      className="h-6 w-6 text-green-600"
+                      aria-hidden="true"
+                    />
                   </div>
                   <div className="mt-3 text-center sm:mt-5">
-                    <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
-                      Payment successful
+                    <Dialog.Title
+                      as="h3"
+                      className="text-lg font-medium leading-6 text-gray-900"
+                    >
+                      Reservation Compléte
                     </Dialog.Title>
                     <div className="mt-2">
                       <p className="text-sm text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.
+                        Votre demande a été reçue. Nous vous contacterons dans
+                        les meilleurs délais.
                       </p>
                     </div>
                   </div>
@@ -62,7 +68,7 @@ export default function ModelConfirmation() {
                     className="inline-flex w-full justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:text-sm"
                     onClick={handelClick}
                   >
-                    Go back to dashboard
+                    Retourner au page accueil
                   </button>
                 </div>
               </Dialog.Panel>
@@ -71,5 +77,5 @@ export default function ModelConfirmation() {
         </div>
       </Dialog>
     </Transition.Root>
-  )
+  );
 }

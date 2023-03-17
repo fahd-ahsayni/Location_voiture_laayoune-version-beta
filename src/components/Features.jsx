@@ -11,7 +11,10 @@ import { Autoplay, FreeMode } from "swiper";
 
 const Features = () => {
   return (
-    <section id="services" className="bg-gray-100 dark:bg-primary-dark pt-20 pb-20 overflow-x-hidden relative">
+    <section
+      id="services"
+      className="bg-gray-100 dark:bg-primary-dark pt-20 pb-20 overflow-x-hidden relative"
+    >
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
@@ -23,8 +26,10 @@ const Features = () => {
                 Location Voiture Laayoune
               </h2>
               <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500 dark:text-gray-300">
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in some form.
+                Si vous choisissez notre service de location de voiture,vous
+                avez opté pour un service de qualité supérieure.ous nous
+                engageons à vous fournir une expérience de location de voiture
+                facile, pratique et sans tracas.
               </p>
             </div>
           </div>

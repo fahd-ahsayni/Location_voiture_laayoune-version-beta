@@ -30,9 +30,8 @@ const CategoriesSection = () => {
           location de voiture laayoune catégories de véhicule
         </p>
         <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500 dark:text-gray-300 text-center">
-          Phasellus lorem quam molestie id quisque diam aenean nulla in.
-          Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend
-          condimentum id viverra nulla.
+          vous pouvez être sûr que vous bénéficierez d'un service de qualité
+          supérieure et d'un véhicule en parfait état pour votre voyage.
         </p>
       </div>
       <ul
