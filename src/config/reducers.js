@@ -128,6 +128,7 @@ export default (state = initialState, action) => {
         modalConfermation: {
           isOpen: false,
         },
+        cardReservationActive: 1,
         confirmation: false,
         formActive: 1,
         isSeatBaby: false,
@@ -138,6 +139,14 @@ export default (state = initialState, action) => {
           days: 0,
           priceTotal: 0,
         },
+        fullName: "",
+        dateStart: "",
+        dateEnd: "",
+        mobile: "",
+        address: "",
+        email: "",
+        carName: "",
+        agence: "",
       };
     case "SET_FULL_NAME":
       return {

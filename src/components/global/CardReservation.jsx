@@ -26,6 +26,7 @@ import {
   openHeaderForm,
   priceSeatUpdate,
   priceTotalUpdate,
+  resetData,
   setDateEnd,
   setDateStart,
 } from "../../config/creatorActions";
@@ -49,6 +50,7 @@ export default function CardReservation({ reservation, id, setReservation }) {
 
   const isSeatBaby = useSelector((state) => state.isSeatBaby);
   const isGps = useSelector((state) => state.isGps);
+
   const dateStartValue = useSelector((state) => state.dateStart);
   const dateEndValue = useSelector((state) => state.dateEnd);
 
@@ -228,8 +230,8 @@ export default function CardReservation({ reservation, id, setReservation }) {
                                         value=""
                                         className="hidden peer"
                                         required=""
-                                        onChange={() => () =>
-                                          dispatch(gpsSelected(!defaultGps))}
+                                        onChange={() =>
+                                          dispatch(gpsSelected(!isGps))}
                                       />
                                       <label
                                         htmlFor="react-option"
@@ -266,7 +268,7 @@ export default function CardReservation({ reservation, id, setReservation }) {
                                         <div className="block">
                                           <FaBaby className="w-6 h-6" />
                                           <p className="w-full mt-3 text-sm font-semibold flex justify-start items-center">
-                                            {isSeatBaby ? (
+                                            {seatBaby ? (
                                               <MdOutlineAddTask className="text-green-500 mr-2.5" />
                                             ) : (
                                               <MdAddCircleOutline className="mr-2.5" />
@@ -328,7 +330,10 @@ export default function CardReservation({ reservation, id, setReservation }) {
                                 </Button>
                                 <Button
                                   color="white"
-                                  onClick={() => setReservation(false)}
+                                  onClick={() => {
+                                    setReservation(false)
+                                    dispatch(resetData())
+                                  }}
                                   className="mt-2.5 py-4 bg-gray-100 border-none px-12 text-gray-500 hover:text-gray-600 hover:bg-gray-50 w-full"
                                 >
                                   Annuler

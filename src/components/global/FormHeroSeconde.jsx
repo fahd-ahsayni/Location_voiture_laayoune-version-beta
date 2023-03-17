@@ -7,6 +7,7 @@ import {
   formActive,
   openHeaderForm,
   openModalConfermation,
+  resetData,
   setAddress,
   setEmail,
   setFullName,
@@ -70,7 +71,8 @@ const FormHeroSeconde = ({children}) => {
     dispatch(openHeaderForm(false));
     dispatch(openModalConfermation(true));
     dispatch(formActive(1))
-    dispatch(cardReservartion(1));
+    dispatch(cardReservartion(1))
+    dispatch(resetData());
   };
 
   const handleReturn = () => {

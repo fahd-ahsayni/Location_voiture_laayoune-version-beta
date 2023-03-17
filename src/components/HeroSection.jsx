@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import heroImage from "../assets/heroImage.jpg";
+import heroImage from "../assets/heroImage.webp";
 
 import Modal from "./global/Modal";
 import { openHeaderForm } from "../config/creatorActions";
@@ -39,11 +39,9 @@ export default function HeroSection() {
                   </div>
                   <div className="relative px-4 py-16 text-center sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                     <Typography variant="h1" color="white">
-                      À Partire de
+                      À Partire de 195 Dhs / jour !
                     </Typography>
-                    <Typography variant="h1" color="white">
-                      195 Dhs / jour !
-                    </Typography>
+                    
 
                     <div className="w-full mb-4 flex items-center justify-center mt-5 space-x-8">
                       <div className="flex justify-center items-center w-full space-x-8">
@@ -60,7 +58,7 @@ export default function HeroSection() {
                     </div>
 
                     <Typography variant="h5" color="white">
-                      Vous Avez Des Question ? N'héstier Pas à Demander
+                      Choisissez votre langue
                     </Typography>
                     <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                       <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">

@@ -8,6 +8,7 @@ import {
   openHeaderForm,
   priceSeatUpdate,
   priceTotalUpdate,
+  resetData,
   setDateEnd,
   setDateStart,
 } from "../../config/creatorActions";
@@ -65,6 +66,7 @@ const FormHeroFirst = () => {
   const handelClose = () => {
     // Add your code to handle the close action
     dispatch(openHeaderForm(false));
+    dispatch(resetData())
   };
 
   const handelClick = () => {
