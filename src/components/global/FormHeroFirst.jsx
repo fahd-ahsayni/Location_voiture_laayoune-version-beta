@@ -78,7 +78,7 @@ const FormHeroFirst = () => {
       dateEndValue &&
       dateEndTest.getTime() > dateStartTest.getTime()
     ) {
-      dispatch(cardReservationActiveUpdate(2));
+      dispatch(formActive(2))
       calculateDuration();
       dispatch(priceTotalUpdate());
     } else {
