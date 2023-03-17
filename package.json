@@ -1,0 +1,45 @@
+{
+  "name": "voiture_location",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "@headlessui/react": "^1.7.12",
+    "@heroicons/react": "^2.0.16",
+    "@material-tailwind/react": "^1.4.2",
+    "@sanity/client": "^5.2.2",
+    "@sanity/image-url": "^1.0.2",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "daisyui": "^2.51.2",
+    "emailjs-com": "^3.2.0",
+    "flowbite": "^1.6.3",
+    "flowbite-react": "^0.3.8",
+    "framer-motion": "^10.0.2",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.10.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.8.2",
+    "redux": "^4.2.1",
+    "swiper": "^9.1.0",
+    "tailwind-datepicker-react": "^1.2.3",
+    "tw-elements": "^1.0.0-beta1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.1.0"
+  }
+}
